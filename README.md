@@ -1,47 +1,55 @@
-AI Customer Management Portal 
+# AI Customer Management Portal
 
-Overview
+## Overview
+AI Customer Management Portal is a hackathon project for a fictional networking hardware company. The system combines customer records, renewal tracking, account health signals, churn risk indicators, and AI-assisted insight workflows in one lightweight web app.
 
-This project is a lightweight customer management portal built for a fictional networking hardware company. It integrates AI-driven insights including natural language query processing, churn prediction, and account health scoring.
+## Current Scope
+- Frontend dashboard with sidebar navigation and premium SaaS-style UI
+- Customer table with search, filters, badges, and detail view
+- AI insights page with risk queue and recommended actions
+- Renewals page for expiring accounts and reminder flow
+- Reports page with revenue, region, plan mix, and risk summaries
+- Backend customer API with synthetic data generation
 
-Features
+## Tech Stack
+- Frontend: React
+- Backend: Flask (Python)
+- Database: SQLite
+- Synthetic Data: Faker + custom generator logic
+- AI/ML direction: NL query flow, account health scoring, churn insights
 
-* CRUD operations for customers, tickets, and device inventory
-* Natural language query interface powered by LLM
-* AI-based account health scoring
-* Churn prediction with explanations
-* Automated weekly email summary generation
+## Data
+- 200+ synthetic customer records
+- Customer profile, region, plan tier, NPS, usage trends
+- Renewal timing, device inventory, support ticket context
+- Mock AI summaries for frontend demo flow
 
-Tech Stack
+## Project Structure
+- `backend/` Flask application, routes, database, and data generation
+- `frontend/` React application for dashboard, customers, AI insights, renewals, and reports
+- `README.md` project overview and setup notes
 
-* Backend: Spring Boot (Java)
-* Database: PostgreSQL
-* AI/ML: OpenAI/Gemini API, Logistic Regression
-* Deployment: AWS EC2 + RDS
+## Run The Backend
+```bash
+cd backend
+python app.py
+```
 
-Data
+## Run The Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
 
-* 200+ synthetic customer records generated using Faker
-* Includes:
+## Frontend Demo Highlights
+- Dashboard KPIs for customers, revenue, renewals, and activity
+- Priority customer cards for fast risk review
+- AI insights engine layout with follow-up recommendations
+- Reports command center with revenue and churn-focused visuals
 
-  * Customer details
-  * Support tickets
-  * Device inventory
-  * Usage metrics
-  * NPS scores
-
-Setup Instructions
-
-1. Clone the repo
-2. Configure database in application.properties
-3. Run Spring Boot application
-
-Future Improvements
-
-* Advanced ML models for churn prediction
-* Scalable microservices architecture
-* Improved UI dashboard
-
-Author
-
-Shreyas R
+## Next Steps
+- Connect frontend pages to expanded backend endpoints
+- Add real churn scoring and account health APIs
+- Improve README with screenshots and deployment link
+- Add final demo video and architecture notes before submission
